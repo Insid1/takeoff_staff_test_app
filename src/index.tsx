@@ -4,14 +4,14 @@ import ReactDOM from 'react-dom/client';
 import App from 'components/app/app';
 import { Provider } from 'react-redux';
 import store from 'store/store';
-import { checkAuth } from 'store/user/thunk';
+import { checkAuth } from 'store/user/thunks';
+
+// check auth
+store.dispatch(checkAuth());
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
-
-// check auth
-store.dispatch(checkAuth());
 
 root.render(
   <React.StrictMode>
@@ -20,8 +20,6 @@ root.render(
         <App />
       </Provider>
     </BrowserRouter>
+    ,
   </React.StrictMode>,
 );
-
-// eslint-disable-next-line import/prefer-default-export
-// export { api };

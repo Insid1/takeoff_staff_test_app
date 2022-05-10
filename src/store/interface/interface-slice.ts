@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { FilterType, SortingType } from 'const';
+import { FilterType, SortingType } from 'enums';
 
 interface IInitialState {
   sortingType: SortingType,

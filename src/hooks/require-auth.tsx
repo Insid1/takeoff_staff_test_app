@@ -1,7 +1,7 @@
 import { useAppSelector } from 'store/hooks';
 import { selectIsAuth, selectIsAuthDataLoaded } from 'store/user/selectors';
 import { Navigate } from 'react-router';
-import { AppRoutes } from 'const';
+import { AppRoutes } from 'enums';
 import Loader from 'components/loader/loader';
 
 interface IRequireAuth {
@@ -12,7 +12,6 @@ interface IRequireAuth {
 function RequireAuth({ children, redirectTo }: IRequireAuth): React.ReactElement {
   const isAuth = useAppSelector(selectIsAuth);
   const isAuthDataLoaded = useAppSelector(selectIsAuthDataLoaded);
-
   if (!isAuthDataLoaded) {
     return <Loader />;
   }

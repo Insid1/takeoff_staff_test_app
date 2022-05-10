@@ -2,13 +2,13 @@ import { Route, Routes } from 'react-router';
 import MainPage from 'components/pages/main-page';
 import SignInPage from 'components/pages/sign-in-page';
 import RequireAuth from 'hooks/require-auth';
-import { AppRoutes } from 'const';
+import { AppRoutes } from 'enums';
 
 function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path={AppRoutes.Main}
         element={(
           <RequireAuth redirectTo={AppRoutes.SignIn}>
             <MainPage />
@@ -16,7 +16,7 @@ function App() {
         )}
       />
       <Route
-        path="/signin"
+        path={AppRoutes.SignIn}
         element={<SignInPage />}
       />
 

@@ -1,17 +1,8 @@
-import { api } from 'api/api';
-import { saveToken } from 'api/token';
-import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch } from 'store/hooks';
-import { setAuth, setEmail } from 'store/user/user-slice';
-import { AppRoutes } from 'const';
-
-const API_URL = 'http://localhost:8000/';
-interface IUser {
-  email: string,
-  password: string,
-}
+import { AppRoutes } from 'enums';
+import { signIn } from 'store/user/thunks';
 
 function SignInPage() {
   const [email, setCurrEmail] = useState('');
@@ -28,24 +19,15 @@ function SignInPage() {
 
   const handleSubmit:React.FormEventHandler<HTMLFormElement> = (evt) => {
     evt.preventDefault();
-    api.post(`${API_URL}register`, {
-      email,
-      password,
-    })
-      .then((response) => {
-        saveToken(response.data.accessToken);
-        return response.data;
-      })
-      .then((data) => {
-        dispatch(setEmail(data.user.email));
-        dispatch(setAuth(true));
-      });
-  };
 
-  const getData = () => {
-    api.get('660/profiles')
-      .then((response) => {
-        console.log(response);
+    dispatch(signIn({ email, password }))
+      .unwrap()
+      .then(() => {
+        setCurrEmail('');
+        setPassword('');
+      })
+      .catch((err) => {
+        // throw some error message
       });
   };
 
@@ -77,7 +59,6 @@ function SignInPage() {
         <input
           type="button"
           value="get data"
-          onClick={() => { getData(); }}
         />
         <Link to={AppRoutes.Main}>To main!</Link>
       </fieldset>

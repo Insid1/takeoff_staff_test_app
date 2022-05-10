@@ -1,7 +1,7 @@
 import axios, {
   AxiosError, AxiosInstance, AxiosResponse, AxiosRequestConfig,
 } from 'axios';
-import { ResponseCode } from 'const';
+import { ResponseCode } from 'enums';
 import { getToken } from './token';
 
 const BASE_URL = 'http://localhost:8000/';
@@ -22,7 +22,7 @@ const createApi = (onUnauthorized: UnauthorizedCallback): AxiosInstance => {
       const { response } = error;
 
       if (response?.status === ResponseCode.Unauthorized) {
-        return onUnauthorized();
+        return (response);
       }
       return Promise.reject(error);
     },
