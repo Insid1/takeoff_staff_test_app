@@ -3,10 +3,23 @@ import { Link } from 'react-router-dom';
 import { useAppDispatch } from 'store/hooks';
 import { AppRoutes } from 'enums';
 import { signIn } from 'store/user/thunks';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import { VpnLockOutlined } from '@mui/icons-material';
+import MyAlert, { IMyAlert } from 'components/my-alert/alert';
+import SignInForm from 'components/sign-in/sign-in-form';
 
 function SignInPage() {
   const [email, setCurrEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertProps, setAlertProps] = useState<IMyAlert>({
+    message: 'You successfully logged in!',
+    severity: 'success',
+  });
   const dispatch = useAppDispatch();
 
   const handleChangeEmail:React.ChangeEventHandler<HTMLInputElement> = (evt) => {
@@ -25,44 +38,24 @@ function SignInPage() {
       .then(() => {
         setCurrEmail('');
         setPassword('');
+        setAlertProps({
+          message: 'You successfully logged in!',
+          severity: 'success',
+        });
       })
       .catch((err) => {
-        // throw some error message
+        setAlertProps({
+          message: 'err',
+          severity: 'error',
+        });
+      })
+      .finally(() => {
+        setShowAlert(true);
       });
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-    >
-      <fieldset>
-        <legend>
-          Sign in into account
-        </legend>
-        <input
-          placeholder="Em@il"
-          type="email"
-          value={email}
-          onChange={handleChangeEmail}
-        />
-        <input
-          placeholder="Password"
-          type="password"
-          value={password}
-          onChange={handleChangePassword}
-          min={3}
-        />
-        <input
-          type="submit"
-          value="submit btn"
-        />
-        <input
-          type="button"
-          value="get data"
-        />
-        <Link to={AppRoutes.Main}>To main!</Link>
-      </fieldset>
-    </form>
+    <SignInForm />
   );
 }
 

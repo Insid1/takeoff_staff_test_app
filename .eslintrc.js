@@ -62,6 +62,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'react/jsx-props-no-spreading': [0],
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'jsx-a11y/label-has-associated-control': [

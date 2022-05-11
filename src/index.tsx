@@ -5,6 +5,7 @@ import App from 'components/app/app';
 import { Provider } from 'react-redux';
 import store from 'store/store';
 import { checkAuth } from 'store/user/thunks';
+import './style/style.scss';
 
 // check auth
 store.dispatch(checkAuth());
@@ -20,6 +21,5 @@ root.render(
         <App />
       </Provider>
     </BrowserRouter>
-    ,
   </React.StrictMode>,
 );

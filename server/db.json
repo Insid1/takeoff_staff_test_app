@@ -64,6 +64,46 @@
       "email": "sobaka@sobaka.com",
       "password": "$2a$10$ZNSxeDvNHVkBlJk.KKAemu8ObO6/vLr1GsmfqLb4LObpBfgBwheL.",
       "id": 13
+    },
+    {
+      "email": "s1obaka@sobaka.com",
+      "password": "$2a$10$UpnwyCGchEWOZqxTDjPKPOVN3dEgfvEh1jVkcJflmRtCS2pSgP5UW",
+      "id": 14
+    },
+    {
+      "email": "sobaka1@sobaka.com",
+      "password": "$2a$10$4GHVXpjLD6UxD6XZ5vQsC.TuGiVztRI6aluCxQwUPIwgQ6WKKEt86",
+      "id": 15
+    },
+    {
+      "email": "htmlAcademy@html.io",
+      "password": "$2a$10$jBdkuLxXGLTWorLXwYpKyO.LMs7qOBouvb/roSQDcHK43RY.YiIrW",
+      "id": 16
+    },
+    {
+      "email": "1htmlAcademy@html.io",
+      "password": "$2a$10$WTg5uoMZPRR0zS2f5OjKvew80iIqcHkOZ1DmqltMkvehr9e7wBoN.",
+      "id": 17
+    },
+    {
+      "email": "11htmlAcademy@html.io",
+      "password": "$2a$10$dTZW0u745wCenZgJ8nLYv.lEmhx3rQjriFC8cg4CXqq/fD1KKFSO2",
+      "id": 18
+    },
+    {
+      "email": "111htmlAcademy@html.io",
+      "password": "$2a$10$/hqy43tNL6/LKZcSESrPxuTHESZ/VEhfDxonDRBQXlrfhgT0k/FVq",
+      "id": 19
+    },
+    {
+      "email": "2htmlAcademy@html.io",
+      "password": "$2a$10$LpQMKFWelSapKhMkzntwieUOamDv.uBKzqt3oMD1aQ.FCLIQ.UQ3C",
+      "id": 20
+    },
+    {
+      "email": "22htmlAcademy@html.io",
+      "password": "$2a$10$QH.nRMJ/AH8aDPQaF886x.TjKLmroftF9aUBBugcHmt374Ecbpfke",
+      "id": 21
     }
   ],
   "profiles": [
