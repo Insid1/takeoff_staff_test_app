@@ -1,0 +1,10 @@
+.nav-link {
+  color: white;
+  text-transform: capitalize;
+  margin: 0 10px;
+  opacity: 0.5;
+
+  &__active {
+    opacity: 1;
+  }
+}

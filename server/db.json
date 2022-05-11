@@ -104,6 +104,26 @@
       "email": "22htmlAcademy@html.io",
       "password": "$2a$10$QH.nRMJ/AH8aDPQaF886x.TjKLmroftF9aUBBugcHmt374Ecbpfke",
       "id": 21
+    },
+    {
+      "email": "3htmlAcademy@html.io",
+      "password": "$2a$10$Ywj081Il8ji1LjyToBnN5OLQ4tn2TXa/whcpq.Lb2/CdDmpGJjNWy",
+      "id": 22
+    },
+    {
+      "email": "4htmlAcademy@html.io",
+      "password": "$2a$10$wWenhqhPZ.3Ins6jDcML2OLwrENIlcoBR9gaNFQ2AB9.0zujrI97C",
+      "id": 23
+    },
+    {
+      "email": "5htmlAcademy@html.io",
+      "password": "$2a$10$bN.SQ0BsDfjhP4EPWonZH.IOpHiA46.KQqEeSATChAnvTKYln2Rn.",
+      "id": 24
+    },
+    {
+      "email": "Sincere@april.biz1",
+      "password": "$2a$10$u.iGOnc5OA/H.Ulnmq4rBeYNoUWj3xFmWC/PADfLHBnEbKnzAQo8i",
+      "id": 25
     }
   ],
   "profiles": [

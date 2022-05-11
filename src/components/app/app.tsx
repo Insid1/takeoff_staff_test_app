@@ -11,6 +11,7 @@ const theme = createTheme({
       'JetBrains Mono',
     ].join(','),
   },
+  spacing: 2,
 });
 
 function App() {

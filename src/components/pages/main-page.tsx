@@ -1,3 +1,4 @@
+import Header from 'components/header/header';
 import Loader from 'components/loader/loader';
 import { useEffect } from 'react';
 import { selectIsDataLoaded } from 'store/data/selectors';
@@ -13,9 +14,17 @@ function MainPage() {
   }, [dispatch]);
 
   return (
-    !isUsersDataLoaded
-      ? <Loader />
-      : <UserList />
+    <>
+      <Header />
+      {
+      !isUsersDataLoaded
+        ? <Loader />
+        : (<UserList />
+        )
+
+    }
+
+    </>
 
   );
 }
