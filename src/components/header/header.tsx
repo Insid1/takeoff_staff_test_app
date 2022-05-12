@@ -5,8 +5,7 @@ import Button from '@mui/material/Button';
 import { AppRoutes } from 'enums';
 import NavLinkCustom from 'hooks/nav-link-custom';
 import AbcIcon from '@mui/icons-material/Abc';
-import Avatar from '@mui/material/Avatar';
-import pink from '@mui/material/colors/pink';
+import UserAvatar from 'components/ui/user-avatar-custom';
 
 function Header() {
   const userEmail = localStorage.getItem('email');
@@ -26,9 +25,7 @@ function Header() {
           </Box>
           {userEmail
             ? (
-              <Avatar sx={{ marginRight: 5, bgcolor: pink[400] }}>
-                {userEmail[0]}
-              </Avatar>
+              <UserAvatar>{userEmail}</UserAvatar>
             )
             : (
               <Button color="secondary" variant="contained">
