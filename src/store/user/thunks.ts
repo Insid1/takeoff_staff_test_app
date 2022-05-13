@@ -30,8 +30,8 @@ const checkAuth = createAsyncThunk(
   },
 );
 
-const signIn = createAsyncThunk(
-  'user/signIn',
+const signUp = createAsyncThunk(
+  'user/signup',
   async ({ email, password }: IPostSignIn) => {
     const response = await api.post(ApiRoutes.Register, { email, password });
     const userEmail = response.data.user.email;
@@ -47,4 +47,4 @@ const signIn = createAsyncThunk(
   },
 );
 
-export { signIn, checkAuth };
+export { signUp, checkAuth };

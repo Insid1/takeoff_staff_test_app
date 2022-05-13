@@ -6,7 +6,7 @@ enum ResponseCode {
 
 enum AppRoutes {
   Main = '/',
-  SignIn = '/signin',
+  SignUp = '/signup',
 }
 
 enum ApiRoutes {

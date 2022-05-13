@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router';
 import MainPage from 'components/pages/main-page';
-import SignInPage from 'components/pages/sign-in-page';
+import SignUpPage from 'components/pages/sign-up-page';
 import RequireAuth from 'hooks/require-auth';
 import { AppRoutes } from 'enums';
 import { createTheme, ThemeProvider } from '@mui/material';
@@ -21,14 +21,18 @@ function App() {
         <Route
           path={AppRoutes.Main}
           element={(
-            <RequireAuth redirectTo={AppRoutes.SignIn}>
+            <RequireAuth redirectTo={AppRoutes.SignUp}>
               <MainPage />
             </RequireAuth>
         )}
         />
         <Route
-          path={AppRoutes.SignIn}
-          element={<SignInPage />}
+          path={AppRoutes.SignUp}
+          element={<SignUpPage />}
+        />
+        <Route
+          path="*"
+          element={<SignUpPage />}
         />
 
       </Routes>

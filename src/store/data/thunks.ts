@@ -32,7 +32,7 @@ const fetchUsers = createAsyncThunk<{
 
 const removeUser = createAsyncThunk(
   'data/user',
-  async (id: number, { dispatch }) => {
+  async (id: number) => {
     const response = await api.delete(`${ApiRoutes.Users}/${id}`);
     return response.statusText === 'OK';
   },

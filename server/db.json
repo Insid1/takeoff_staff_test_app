@@ -4,6 +4,11 @@
       "email": "htmlAcademy@html.io",
       "password": "$2a$10$oz4844Qqe1mOspc1Dd8uNuDgKy5NxH/5p7FTODkJ9gfS.iZh9Oe0e",
       "id": 1
+    },
+    {
+      "email": "h1tmlAcademy@html.io",
+      "password": "$2a$10$JLHJGMtOuDDPNu.WsUfh5eYAObPHrC7MWymXJVY42OKn1T.C/fGyy",
+      "id": 2
     }
   ],
   "profiles": [

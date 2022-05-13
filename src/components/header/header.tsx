@@ -21,7 +21,7 @@ function Header() {
           />
           <Box sx={{ flexGrow: 1 }}>
             <NavLinkCustom title="Main" to={AppRoutes.Main} />
-            <NavLinkCustom title="Log-In" to={AppRoutes.SignIn} />
+            <NavLinkCustom title="Sign Up" to={AppRoutes.SignUp} />
           </Box>
           {userEmail
             ? (
