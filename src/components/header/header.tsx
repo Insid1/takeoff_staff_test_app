@@ -1,14 +1,15 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
 import { AppRoutes } from 'enums';
 import NavLinkCustom from 'hooks/nav-link-custom';
 import AbcIcon from '@mui/icons-material/Abc';
 import UserAvatar from 'components/ui/user-avatar-custom';
+import SignIn from 'components/sign-in/sign-in';
 
 function Header() {
   const userEmail = localStorage.getItem('email');
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -28,9 +29,7 @@ function Header() {
               <UserAvatar>{userEmail}</UserAvatar>
             )
             : (
-              <Button color="secondary" variant="contained">
-                Login
-              </Button>
+              <SignIn />
             )}
         </Toolbar>
       </AppBar>

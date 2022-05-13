@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { checkAuth, signUp } from './thunks';
+import { checkAuth, signIn, signUp } from './thunks';
 
 interface IInitialState {
   isAuth: boolean,
@@ -32,6 +32,11 @@ const userSlice = createSlice({
     });
 
     builder.addCase(signUp.fulfilled, (state, action) => {
+      state.isAuth = action.payload.authStatus;
+      state.isAuthDataLoaded = action.payload.isAuthDataLoaded;
+      state.email = action.payload.email;
+    });
+    builder.addCase(signIn.fulfilled, (state, action) => {
       state.isAuth = action.payload.authStatus;
       state.isAuthDataLoaded = action.payload.isAuthDataLoaded;
       state.email = action.payload.email;

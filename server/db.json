@@ -9,6 +9,11 @@
       "email": "h1tmlAcademy@html.io",
       "password": "$2a$10$JLHJGMtOuDDPNu.WsUfh5eYAObPHrC7MWymXJVY42OKn1T.C/fGyy",
       "id": 2
+    },
+    {
+      "email": "111htmlAcademy@html.io",
+      "password": "$2a$10$/k5z.d/4dK.tyLcpxVp54uC1fh6gYS6QFE7inzv.QmSqBGNVLQX9O",
+      "id": 3
     }
   ],
   "profiles": [
