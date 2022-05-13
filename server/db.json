@@ -1,73 +1,6 @@
 {
-  "users": [
-    {
-      "email": "htmlAcademy@html.io",
-      "password": "$2a$10$oz4844Qqe1mOspc1Dd8uNuDgKy5NxH/5p7FTODkJ9gfS.iZh9Oe0e",
-      "id": 1
-    },
-    {
-      "email": "h1tmlAcademy@html.io",
-      "password": "$2a$10$JLHJGMtOuDDPNu.WsUfh5eYAObPHrC7MWymXJVY42OKn1T.C/fGyy",
-      "id": 2
-    },
-    {
-      "email": "111htmlAcademy@html.io",
-      "password": "$2a$10$/k5z.d/4dK.tyLcpxVp54uC1fh6gYS6QFE7inzv.QmSqBGNVLQX9O",
-      "id": 3
-    }
-  ],
+  "users": [],
   "profiles": [
-    {
-      "id": 1,
-      "name": "Aladdin Mcneil",
-      "phone": "(01172) 775659",
-      "email": "quis.lectus.nullam@yahoo.net",
-      "date": 1637083759000,
-      "company": "Ante Dictum Cursus Limited",
-      "city": "Nha Trang",
-      "address": "331-2294 Id St.",
-      "country": "South Africa",
-      "creditCard": "630475542474663451",
-      "pinCode": 7882,
-      "colour": "#dd7573",
-      "latlng": "62.1885014016, 18.1229873152",
-      "currency": "$97.16",
-      "isPremium": false
-    },
-    {
-      "id": 2,
-      "name": "Germaine Grant",
-      "phone": "0953 574 7519",
-      "email": "eget.magna.suspendisse@hotmail.couk",
-      "date": 1644657590000,
-      "company": "Tortor Corp.",
-      "city": "Makiivka",
-      "address": "176-3547 Nulla. Ave",
-      "country": "Norway",
-      "creditCard": "675939 2557535642",
-      "pinCode": 9735,
-      "colour": "#63e261",
-      "latlng": "49.4820478976, 69.6590701568",
-      "currency": "$25.32",
-      "isPremium": true
-    },
-    {
-      "id": 3,
-      "name": "Shay Hayden",
-      "phone": "(0171) 251 5817",
-      "email": "eu.eros.nam@hotmail.com",
-      "date": 1622613900000,
-      "company": "Enim Diam Vel Incorporated",
-      "city": "Khyber Agency",
-      "address": "768-3223 Fringilla. Avenue",
-      "country": "Spain",
-      "creditCard": "677138 62 6516 4618 422",
-      "pinCode": 2028,
-      "colour": "#dcf70e",
-      "latlng": "20.7728487424, 64.8775079936",
-      "currency": "$14.77",
-      "isPremium": true
-    },
     {
       "id": 4,
       "name": "Phyllis Dickerson",
@@ -84,23 +17,6 @@
       "latlng": "45.2488435712, -148.8287628288",
       "currency": "$82.09",
       "isPremium": false
-    },
-    {
-      "id": 5,
-      "name": "Gretchen Chan",
-      "phone": "0846 521 2134",
-      "email": "diam.dictum.sapien@yahoo.com",
-      "date": 1647208711000,
-      "company": "Quis PC",
-      "city": "Soissons",
-      "address": "P.O. Box 273, 1831 In Street",
-      "country": "South Africa",
-      "creditCard": "214922759738734",
-      "pinCode": 9044,
-      "colour": "#6cb3c9",
-      "latlng": "40.3931114496, 171.4756109312",
-      "currency": "$46.76",
-      "isPremium": true
     },
     {
       "id": 6,
@@ -134,57 +50,6 @@
       "colour": "#ffac89",
       "latlng": "82.325395456, 110.875636736",
       "currency": "$34.43",
-      "isPremium": false
-    },
-    {
-      "id": 8,
-      "name": "Benedict Odom",
-      "phone": "07898 267800",
-      "email": "nulla.in@google.couk",
-      "date": 1673824976000,
-      "company": "Ac Orci Ut Corp.",
-      "city": "Dangjin",
-      "address": "708-1132 Neque St.",
-      "country": "South Korea",
-      "creditCard": "362246767326618",
-      "pinCode": 8818,
-      "colour": "#ef3910",
-      "latlng": "-57.7611117568, 57.1117528064",
-      "currency": "$28.76",
-      "isPremium": true
-    },
-    {
-      "id": 9,
-      "name": "Justina Stokes",
-      "phone": "0845 46 42",
-      "email": "placerat@protonmail.ca",
-      "date": 1657811261000,
-      "company": "Faucibus Associates",
-      "city": "Maracanaú",
-      "address": "Ap #954-1058 Enim, Rd.",
-      "country": "Norway",
-      "creditCard": "367626847127463",
-      "pinCode": 6372,
-      "colour": "#24c178",
-      "latlng": "-89.7715290112, -22.9101084672",
-      "currency": "$16.00",
-      "isPremium": true
-    },
-    {
-      "id": 10,
-      "name": "Marsden Murphy",
-      "phone": "076 6549 2111",
-      "email": "integer.aliquam@icloud.net",
-      "date": 1676081873000,
-      "company": "Adipiscing Elit Curabitur Corp.",
-      "city": "General Lagos",
-      "address": "P.O. Box 691, 5509 Posuere, Street",
-      "country": "Germany",
-      "creditCard": "2014 594413 23752",
-      "pinCode": 3710,
-      "colour": "#63bbc6",
-      "latlng": "4.0153079808, 10.7364504576",
-      "currency": "$96.57",
       "isPremium": false
     },
     {

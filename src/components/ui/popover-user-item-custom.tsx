@@ -22,7 +22,7 @@ function PopoverUserItem(props :PopoverUserItemProps) {
 
   } = props;
   const open = Boolean(anchorEl);
-  const popoverId = open ? 'simple-popover' : undefined;
+  const popoverId = open ? 'user-info-popover' : undefined;
   return (
     <Popover
       {...props}
