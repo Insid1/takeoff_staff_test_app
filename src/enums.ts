@@ -14,11 +14,11 @@ enum ApiRoutes {
   Login = '/login',
   Users = '660/profiles',
 }
-
 enum SortingType {
-  None = 'None',
-  ByDate = 'ByDate',
-  ByUser = 'ByUser',
+  name = 'name',
+  email = 'email',
+  date = 'date',
+  default = 'default',
 }
 
 enum FilterType {

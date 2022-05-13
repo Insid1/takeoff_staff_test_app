@@ -9,7 +9,6 @@ import './style/style.scss';
 
 // check auth
 store.dispatch(checkAuth());
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );

@@ -4,11 +4,11 @@ import Stack from '@mui/material/Stack';
 
 interface ICustomTypography {
   caption: string,
-  title: string,
+  title?: string | number,
   justifyContent?: 'flex-start' | 'center' | 'flex-end',
 }
 
-function Label({ caption, title, justifyContent = 'flex-start' }: ICustomTypography) {
+function Label({ caption, title = 'not assigned', justifyContent = 'flex-start' }: ICustomTypography) {
   return (
     <Stack
       direction="row"
@@ -26,7 +26,6 @@ function Label({ caption, title, justifyContent = 'flex-start' }: ICustomTypogra
       </Typography>
       <Typography textTransform="capitalize">
         {title}
-
       </Typography>
     </Stack>
   );

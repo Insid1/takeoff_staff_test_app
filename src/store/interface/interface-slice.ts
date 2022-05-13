@@ -7,7 +7,7 @@ interface IInitialState {
 }
 
 const initialState: IInitialState = {
-  sortingType: SortingType.None,
+  sortingType: SortingType.default,
   filterType: FilterType.None,
 };
 

@@ -5,11 +5,13 @@ import { selectIsDataLoaded } from 'store/data/selectors';
 import { fetchUsers } from 'store/data/thunks';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import UserList from 'components/user/user-list';
+import { setUsersNumberCurrent } from 'store/data/data-slice';
 
 function MainPage() {
   const dispatch = useAppDispatch();
   const isUsersDataLoaded = useAppSelector(selectIsDataLoaded);
   useEffect(() => {
+    dispatch(setUsersNumberCurrent(10));
     dispatch(fetchUsers());
   }, [dispatch]);
 
@@ -21,9 +23,7 @@ function MainPage() {
         ? <Loader />
         : (<UserList />
         )
-
     }
-
     </>
 
   );
